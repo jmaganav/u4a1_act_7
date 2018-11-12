@@ -19,29 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //Actividad 7 Ejecucion de tareas en segundo plano
-        //Hasta ahora, hemos ejecutado el codigo en primer plano o en lo que se conoce como
-        //el hilo de interfaz de usuario (UI thread)
 
-        //El UI thread se utiliza para modificar los componentes visuales de Android (animaciones, cambiar valores de controles, transiciones de pantallas...), si tratamos de hacer esto
-        //en segundo plano, la aplicacion dejara de funcionar.
-
-        //El metodo onCreate se ejecuta en el UI thread
-
-        //Pero si hacemos tareas que puedan tardar mucho, como consultar un servidor Web, o modificar
-        //el tamano de una imagen de gran tamano, el UI thread se puede trabar esperando por estos procesos y
-        //la aplicacion se mostrara poco responsiva.
-
-        //Una de las manera de evitar esto, es mover el codigo que pudiera demandar mas recursos
-        //a un proceso en segundo plano.
-        //
-        //En esta actividad exploramos el uso de AsyncTask
-        //Referencias
-        //https://developer.android.com/guide/components/processes-and-threads
-        //https://developer.android.com/reference/android/os/AsyncTask
-
-        // El archivo del layout de la actividad se encuentra en la carpeta
-        // res/layout/activity_main.xml
         setContentView(R.layout.activity_main);
 
 
@@ -52,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         final ImageView iv = findViewById(R.id.iv);
 
 
-        //Cuando nuestra aplicacion sea iniciada por otra  aplicacion, type no sera nulo
+      //  JMV//Cuando nuestra aplicacion sea iniciada por otra  aplicacion, type no sera nulo
         if (Intent.ACTION_SEND.equals(action) && type != null) {
 
             //Verificamos que el mime type del dato sea de una imagen
