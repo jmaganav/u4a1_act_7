@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         final ImageView iv = findViewById(R.id.iv);
 
 
-      //  JMV//Cuando nuestra aplicacion sea iniciada por otra  aplicacion, type no sera nulo
+      //se comparte la imagen desde la pagina de la misma y no desde el buscador de google
+        // Cuando nuestra aplicacion sea iniciada por otra  aplicacion, type no sera nulo
         if (Intent.ACTION_SEND.equals(action) && type != null) {
 
             //Verificamos que el mime type del dato sea de una imagen
