@@ -32,6 +32,8 @@ public class Worker extends AsyncTask <Uri, Void, Bitmap>  {
 
                 Uri imageUri = uris[0];
 
+                //para compartir imagen hay que visitar la pagina, y ya alli si se puede compartir
+
                 //En la actividad 6 obteniamos el contexto con el metodo getApplicationContext()
                 //En un AsyncTask, este metodo no esta disponible.
                 //Para obtener el contexto lo hacemos mediante el imageView.
